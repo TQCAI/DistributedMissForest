@@ -1,0 +1,7 @@
+PKG-INFO
+__pychache__
+*.pyc
+*.tar
+*.gz
+.idea
+*.egg*
