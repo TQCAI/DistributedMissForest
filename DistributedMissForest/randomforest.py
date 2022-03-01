@@ -5,7 +5,7 @@ class RandomForest:
     def __init__(self, params):
         """initialize two random forest models and job parameters"""
         self._unpack(params)
-        self.reg = RandomForestRegressor(criterion='mse', **self.params)
+        self.reg = RandomForestRegressor(criterion='squared_error', **self.params)
         self.clf = RandomForestClassifier(criterion='gini', **self.params, class_weight=self.cw)
         self.done = False
         self.err = None
